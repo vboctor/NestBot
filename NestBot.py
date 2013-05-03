@@ -6,7 +6,10 @@ import sys
 import time
 import urllib2
 
-from nestpy.nest import Nest
+lib_path = os.path.abspath('./tweepy')
+sys.path.append(lib_path)
+
+from pynest.nest import Nest
 from tweepy import (API, OAuthHandler)
 
 class NestBot:
