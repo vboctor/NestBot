@@ -52,10 +52,10 @@ class NestBot:
             print 'Skipping "' + message + '" from "' + sender + '"'
         elif (message == 'status'):
             print 'getting status... not implemented.'
-            self.api.send_direct_message(user = sender, text = 'Here is your status!!!')
+            self.api.send_direct_message(user = sender, text = 'Here is your status!!! - ' + str(id))
         elif (message == 'away'):
             print 'setting away... not implemented.'
-            self.api.send_direct_message(user = sender, text = 'Your nest is now set to away.')
+            self.api.send_direct_message(user = sender, text = 'Your nest is now set to away.' + str(id))
 
     def updateWatermark(self, messageId):
         self.last_message_id = str(messageId)
