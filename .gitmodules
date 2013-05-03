@@ -1,0 +1,6 @@
+[submodule "tweepy"]
+	path = tweepy
+	url = git@github.com:vboctor/tweepy.git
+[submodule "pynest"]
+	path = pynest
+	url = git@github.com:vboctor/pynest.git
